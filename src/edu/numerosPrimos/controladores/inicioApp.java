@@ -4,9 +4,17 @@ import java.util.Scanner;
 
 import edu.numerosPrimos.servicios.operaorImplementacion;
 import edu.numerosPrimos.servicios.operaorInterfaz;
-
+/**
+ * Clase de nuestra aplicacion inicial
+ * @authorjpr-16/11/23
+ */
 public class inicioApp {
 
+	/**
+	 * metodo principal de nuestr aplicacion
+	 * @authorjpr-16/11/23
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		operaorInterfaz oi = new operaorImplementacion();
 		Scanner op = new Scanner(System.in);

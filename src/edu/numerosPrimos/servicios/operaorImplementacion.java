@@ -1,24 +1,32 @@
 package edu.numerosPrimos.servicios;
 
 import java.util.Scanner;
-
+/**
+ * Implementacion de la interfaz
+ * @authorjpr-16/11/23
+ */
 public class operaorImplementacion implements operaorInterfaz {
 
 	public void primo(Scanner num) {
 		int num1 = num.nextInt();
-		 boolean primo = true;
-		  for (int i = 2; i <= num1 / 2; i++) {
-	            if (num1 % i == 0) {
-	                primo = false;
-	            }
-	        }
-	   
-	        if (primo) {
-	            System.out.println(num1 + "--> Es un numero primo");
-	        } else {
-	            System.out.println(num1 + "--> No es un numero primo.");
-	        }
-				
+        int count = 0;
+       
+        for (int i = 2; ; i++) {
+            boolean primo = true;
+            for (int j = 2; j <= Math.sqrt(i); j++) {
+                if (i % j == 0) {
+                    primo = false;
+
+                }
+            }
+            if (primo) {
+                count++;
+                System.out.println(i);
+                if (count==num1) {
+                	break;
+                }
+            }
+        }
 		}
 		
 	}
