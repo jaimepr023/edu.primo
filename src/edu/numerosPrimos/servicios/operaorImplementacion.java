@@ -11,7 +11,8 @@ public class operaorImplementacion implements operaorInterfaz {
 		int num1 = num.nextInt();
         int count = 0;
        
-        for (int i = 2; ; i++) {
+        System.out.print(1);
+        for (int i = 2; ; i++) {       	
             boolean primo = true;
             for (int j = 2; j <= Math.sqrt(i); j++) {
                 if (i % j == 0) {

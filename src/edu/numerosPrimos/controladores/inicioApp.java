@@ -2,6 +2,7 @@ package edu.numerosPrimos.controladores;
 
 import java.util.Scanner;
 
+
 import edu.numerosPrimos.servicios.operaorImplementacion;
 import edu.numerosPrimos.servicios.operaorInterfaz;
 /**
@@ -27,13 +28,6 @@ public class inicioApp {
 		
 	}while(afirmacion.equals("si"));
 	
-	
-			
-	
+	}}	
 
-	
-	
 
-	}
-
-}
